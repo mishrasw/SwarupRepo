@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="SugarCRM" parallel="tests" thread-count="15"
+	preserve-order="true">
+
+     <test name="ChromeTest">
+     
+		<parameter name="automationName" value="DesktopWeb" />
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserVersion" value="67" />
+		<parameter name="platformName" value="Windows 7" />
+		<parameter name="environment" value="local" />
+		
+		<classes>
+			<class name="com.maven.AutomatedTest.robobullTest" /> 
+	
+		</classes> 
+	</test>
+	  
+	 
+</suite>

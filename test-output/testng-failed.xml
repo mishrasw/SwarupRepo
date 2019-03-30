@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="15" guice-stage="DEVELOPMENT" name="Failed suite [SugarCRM]" parallel="tests">
+  <parameter name="environment" value="local"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="browserVersion" value="67"/>
+  <parameter name="automationName" value="DesktopWeb"/>
+  <parameter name="platformName" value="Windows 7"/>
+  <test name="ChromeTest(failed)" parallel="tests">
+    <parameter name="environment" value="local"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="67"/>
+    <parameter name="automationName" value="DesktopWeb"/>
+    <parameter name="platformName" value="Windows 7"/>
+    <classes>
+      <class name="com.maven.AutomatedTest.robobullTest">
+        <methods>
+          <include name="beforeMethod"/>
+          <include name="beforeSuite"/>
+          <include name="afterSuite"/>
+          <include name="befSuite"/>
+          <include name="afterClass"/>
+          <include name="afterMethod"/>
+          <include name="afterMethod"/>
+          <include name="roboTestCase"/>
+        </methods>
+      </class> <!-- com.maven.AutomatedTest.robobullTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [SugarCRM] -->
